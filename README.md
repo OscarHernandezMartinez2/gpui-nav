@@ -3,7 +3,6 @@
 A lightweight screen navigation library for GPUI applications.
 
 [![Crates.io](https://img.shields.io/crates/v/gpui-nav.svg)](https://crates.io/crates/gpui-nav)
-[![Documentation](https://docs.rs/gpui-nav/badge.svg)](https://docs.rs/gpui-nav)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Quick Start
