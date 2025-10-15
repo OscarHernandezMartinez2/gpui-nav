@@ -35,22 +35,31 @@
 //!
 //! ### Push a new screen
 //! ```rust,ignore
-//! self.ctx.push(SettingsScreen::new(self.ctx.app_state()), cx);
+//! let settings_screen = SettingsScreen::new(ctx.weak_entity());
+//! app.navigator.push(settings_screen, cx);
 //! ```
 //!
 //! ### Pop the current screen
 //! ```rust,ignore
-//! self.ctx.pop(cx);
+//! app.navigator.pop(cx);
 //! ```
 //!
 //! ### Replace the current screen
 //! ```rust,ignore
-//! self.ctx.replace(LoginScreen::new(self.ctx.app_state()), cx);
+//! let login_screen = LoginScreen::new(ctx.weak_entity());
+//! app.navigator.replace(login_screen, cx);
 //! ```
 //!
 //! ### Clear stack and push new screen
 //! ```rust,ignore
-//! self.ctx.clear_and_push(HomeScreen::new(self.ctx.app_state()), cx);
+//! let home_screen = HomeScreen::new(ctx.weak_entity());
+//! app.navigator.clear_and_push(home_screen, cx);
+//! ```
+//!
+//! ## Examples
+//!
+//! See the [basic navigation example](https://github.com/benodiwal/gpui-nav/tree/main/examples/basic_navigation)
+//! for a complete working demonstration.
 
 pub mod context;
 mod navigator;
@@ -63,6 +72,17 @@ pub use context::ScreenContext;
 pub use navigator::Navigator;
 pub use screen::Screen;
 
+/// Prelude module for convenient imports
+///
+/// Import everything you need to get started with gpui-nav:
+///
+/// ```rust
+/// use gpui_nav::prelude::*;
+///
+/// // Now you have access to Navigator, Screen, and ScreenContext
+/// ```
 pub mod prelude {
-    pub use crate::ScreenContext;
+    //! Convenient re-exports of commonly used gpui-nav types
+
+    pub use crate::{Navigator, Screen, ScreenContext};
 }
