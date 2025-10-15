@@ -1,5 +1,3 @@
-//! Screen trait definition for navigation.
-
 use gpui::{Context, Render};
 
 /// A screen that can be displayed in the navigation stack.
@@ -10,7 +8,7 @@ use gpui::{Context, Render};
 ///
 /// ```rust,ignore
 /// use gpui::*;
-/// use gpui_navigator::Screen;
+/// use gpui_nav::Screen;
 ///
 /// pub struct MyScreen {
 ///     // your fields
@@ -20,13 +18,11 @@ use gpui::{Context, Render};
 ///     fn id(&self) -> &'static str {
 ///         "my_screen"
 ///     }
-///     
-///     fn on_enter(&mut self, cx: &mut Context<Self>) {
-///         // Called when screen becomes visible
-///     }
-///     
-///     fn on_exit(&mut self, cx: &mut Context<Self>) {
-///         // Called when screen is removed
+/// }
+///
+/// impl Render for MyScreen {
+///     fn render(&mut self, _: &mut Window, _: &mut Context<Self>) -> impl IntoElement {
+///         div().child("My Screen")
 ///     }
 /// }
 /// ```
