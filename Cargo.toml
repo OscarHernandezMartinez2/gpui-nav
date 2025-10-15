@@ -9,6 +9,12 @@ keywords = ["gui", "navigation", "gpui", "router"]
 categories = ["gui", "ui"]
 readme = "README.md"
 
+exclude = [
+    "examples/*",
+    "tests/*",
+    ".github/*",
+]
+
 [dependencies]
 gpui = "0.2.1"
 
