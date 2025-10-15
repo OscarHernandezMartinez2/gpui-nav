@@ -82,7 +82,6 @@ pub use screen::Screen;
 /// // Now you have access to Navigator, Screen, and ScreenContext
 /// ```
 pub mod prelude {
-    //! Convenient re-exports of commonly used gpui-nav types
-
+    /// Convenient re-exports of commonly used gpui-nav types
     pub use crate::{Navigator, Screen, ScreenContext};
 }

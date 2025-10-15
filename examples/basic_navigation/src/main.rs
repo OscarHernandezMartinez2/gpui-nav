@@ -70,7 +70,7 @@ fn main() {
                 ..Default::default()
             },
             |_window, cx| {
-                cx.new(|cx| NavigationExample::new(cx))
+                cx.new(NavigationExample::new)
             },
         )
         .unwrap();
