@@ -14,4 +14,3 @@ gpui = "0.2.1"
 
 [dev-dependencies]
 gpui = { version = "0.2.1", features = ["test-support"] }
-
