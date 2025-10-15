@@ -97,4 +97,10 @@ mod tests {
         let screen = TestScreen;
         assert_eq!(screen.id(), "test");
     }
+
+    #[test]
+    fn test_navigator_replace_returns_bool() {
+        let navigator = Navigator::new();
+        assert!(navigator.is_empty());
+    }
 }

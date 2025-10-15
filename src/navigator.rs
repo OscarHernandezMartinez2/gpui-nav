@@ -88,15 +88,26 @@ impl Navigator {
 
     /// Replaces the current screen with a new one.
     ///
+    /// Returns `true` if a screen was replaced, `false` if the stack is empty.
+    ///
     /// # Example
     ///
     /// ```rust,ignore
-    /// navigator.replace(LoginScreen::new(ctx), cx);
+    /// if navigator.replace(LoginScreen::new(ctx), cx) {
+    ///     println!("Screen replaced");
+    /// } else {
+    ///     println!("No screen to replace, stack is empty");
+    /// }
     /// ```
-    pub fn replace<S: Screen, T: 'static>(&mut self, screen: S, cx: &mut Context<T>) {
-        self.stack.pop();
-        self.history.pop();
-        self.push(screen, cx);
+    pub fn replace<S: Screen, T: 'static>(&mut self, screen: S, cx: &mut Context<T>) -> bool {
+        if self.stack.is_empty() {
+            false
+        } else {
+            self.stack.pop();
+            self.history.pop();
+            self.push(screen, cx);
+            true
+        }
     }
 
     /// Returns a reference to the current screen, if any.
