@@ -1,5 +1,5 @@
-use gpui::{AnyView, AppContext, Context, Entity};
 use crate::screen::Screen;
+use gpui::{AnyView, AppContext, Context, Entity};
 
 /// A navigation stack that manages screen transitions.
 ///

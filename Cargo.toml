@@ -12,10 +12,6 @@ readme = "README.md"
 [dependencies]
 gpui = "0.2.1"
 
-[[example]]
-name = "basic.rs"
-path = "examples/basic.rs"
+[dev-dependencies]
+gpui = { version = "0.2.1", features = ["test-support"] }
 
-[[example]]
-name = "advanced.rs"
-path = "examples/advanced.rs"

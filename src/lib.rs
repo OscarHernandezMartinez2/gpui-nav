@@ -6,7 +6,7 @@
 //!
 //! ```rust,no_run
 //! use gpui::*;
-//! use gpui_navigator::{Navigator, Screen, ScreenContext};
+//! use gpui_nav::{Navigator, Screen, ScreenContext};
 //!
 //! // Define your app state
 //! pub struct AppState {
@@ -15,7 +15,7 @@
 //!
 //! // Define a screen
 //! pub struct HomeScreen {
-//!     ctx: ScreenContext,
+//!     ctx: ScreenContext<AppState>,
 //! }
 //!
 //! impl Screen for HomeScreen {
@@ -52,9 +52,12 @@
 //! ```rust,ignore
 //! self.ctx.clear_and_push(HomeScreen::new(self.ctx.app_state()), cx);
 
-mod navigator;
 pub mod context;
+mod navigator;
 mod screen;
+
+#[cfg(test)]
+mod tests;
 
 pub use context::ScreenContext;
 pub use navigator::Navigator;
