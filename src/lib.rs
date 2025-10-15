@@ -53,7 +53,13 @@
 //! self.ctx.clear_and_push(HomeScreen::new(self.ctx.app_state()), cx);
 
 mod navigator;
-mod context;
+pub mod context;
 mod screen;
 
-pub mod prelude {}
+pub use context::ScreenContext;
+pub use navigator::Navigator;
+pub use screen::Screen;
+
+pub mod prelude {
+    pub use crate::ScreenContext;
+}
