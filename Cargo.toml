@@ -1,5 +1,6 @@
 [package]
 name = "gpui-nav"
+description = "A lightweight screen navigation library for GPUI"
 version = "0.1.0"
 edition = "2024"
 authors = ["Sachin Beniwal <sachinbeniwal0101@gmail.com>"]
