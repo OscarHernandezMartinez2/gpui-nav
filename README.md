@@ -13,7 +13,7 @@ Add this to your `Cargo.toml`:
 ```toml
 [dependencies]
 gpui = "0.2.1"
-gpui-nav = "0.1.0"
+gpui-nav = "0.1.1"
 ```
 
 ## Basic Usage
