@@ -1,0 +1,12 @@
+[package]
+name = "basic_navigation_example"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "basic_navigation_example"
+path = "src/main.rs"
+
+[dependencies]
+gpui = "0.2.1"
+gpui-nav = { path = "../.." }
